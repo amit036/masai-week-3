@@ -1,0 +1,269 @@
+body{
+    background:lightskyblue;;
+ 
+}
+
+button{
+    width:200px;
+    height:80px;
+    margin:40px;
+    background: lightseagreen;
+    border-radius: 20px;
+    font-size: 25px;
+    color: red;
+    margin-left:-20px;
+    font-weight: bold;
+    
+}
+input{
+    width:400px;
+    height:70px;
+    margin:30px;
+    border:1px solid black;
+    font-size:40px;
+    background:red;
+}
+#playerName1{
+    border-radius: 20px;
+    text-align: center;
+}
+#enterPlayer1{
+    font-size: 30px;
+    color: rebeccapurple;
+    font-family: cursive;
+    font-weight: bold;
+    margin-left:40px;
+}
+#playerName2{
+    border-radius: 20px;
+    text-align: center;
+}
+#enterPlayer2{
+    font-size: 30px;
+    color: green;
+    font-family: cursive;
+    font-weight: bold;
+}
+#showPlayerName{
+    font-size: 30px;
+    margin:70px 0px 0px 300px;
+    font-weight: bold;
+    color: red;
+
+}
+#diceRolled{
+    float: left;
+    margin-top:-100px;
+}
+#mainContainer{
+    float: left;  
+    margin-top:-50px;
+}
+
+.redBg{
+    width:100px;
+    height:80px;
+    float: left;
+    font-size:40px;
+    text-align: center;
+    background: red;
+    border: 2px solid black;
+    position: relative;
+}
+.whiteBg{
+    width:100px;
+    height:80px;
+    float: left;
+    font-size:40px;
+    text-align: center;
+    background:white;
+    border: 2px solid black;
+    position: relative;
+}
+#firstRow{
+    margin:30px 0px 0px 800px;
+    
+}
+#secondRow,#thirdRow,#fourthRow,#fifthRow,#sixthRow,
+#seventhRow,#eightRow,#ninthRow,#tenthRow
+{
+    margin:0px 0px 0px 800px;   
+}
+#startPoint{
+    font-size: 20px;
+    color: green;
+}
+/* complete */
+#snake1{
+    margin-left:-220px;
+    margin-top:610px;
+    float:left;
+    position: absolute;
+}
+/* complete */
+#snake2{
+    height: 350px;
+    width: 60px;
+    margin-left:-650px;
+    margin-top:500px;
+    float:left;
+    position: absolute;
+}
+/* complete */
+#snake3{
+    height:400px;
+    width:80px;
+    float:left;
+    margin-left:-480px;
+    margin-top:340px;
+    position: absolute;
+}
+/* complete */
+#snake4{
+    height:500px;
+    width:80px;
+    float:left;
+    margin-left:-800px;
+    margin-top:250px;
+    position: absolute;
+}
+/* complete */
+#snake5{
+    height:550px;
+    width:100px;
+    float:left;
+    margin-left:-300px;
+    margin-top:90px;
+    position: absolute;
+}
+/* complete */
+#snake6{
+    height:550px;
+    width:50px;
+    float:left;
+    margin-left:-600px; 
+    position: absolute;
+}
+#snake7{
+    height:200px;
+    width:50px;
+    float:left;
+    margin-top:30px;
+    margin-left:-700px; 
+    position: absolute;
+}
+/* complete */
+#ladder1{
+    height:200px;
+    width:50px;
+    float:left;
+    margin-top:30px;
+    margin-left:-100px; 
+    position: absolute;
+}
+/* complete */
+#ladder2{
+    height:200px;
+    width:50px;
+    float:left;
+    margin-top:30px;
+    margin-left:-860px; 
+    position: absolute;
+}
+/* complete */
+#ladder3{
+    height:600px;
+    width:50px;
+    float:left;
+    margin-top:150px;
+    margin-left:-490px; 
+    position: absolute;
+}
+/* complete */
+#ladder4{
+    height:200px;
+    width:50px;
+    float:left;
+    margin-top:430px;
+    margin-left:-960px; 
+    position: absolute;
+}
+/* complete */
+#ladder5{
+    height:200px;
+    width:50px;
+    float:left;
+    margin-top:280px;
+    margin-left:-130px; 
+    position: absolute;
+}
+/* complete */
+#ladder6{
+    height:250px;
+    width:50px;
+    float:left;
+    margin-top:580px;
+    margin-left:-130px; 
+    position: absolute;
+}
+#diceOne{
+    float: left;
+    width:100px;
+    height:100px;
+    margin-left: 100px;
+    margin-top:-300px;
+    background: #95FE06;
+    border-radius: 10px;
+}
+#diceTwo{
+    float: left;
+    width:100px;
+    height:100px;
+    margin-left: 400px;
+    margin-top:-305px;
+    background: yellow;
+    border-radius: 10px;
+}
+#rollOne{
+    margin-left: 50px;
+    width: 200px;
+    border-radius: 5px;
+    margin-top:-200px;
+}
+#rollTwo{
+    margin-left: 50px;
+    width: 200px;
+    border-radius: 5px;
+    margin-top:-300px;
+}
+#marginOne{
+    position: relative;
+    background: #95FE06;
+    margin-left:-20px;
+    margin-top:10px;
+}
+#marginTwo{
+    margin-top:40px;
+    position: relative;
+    margin-left:-20px;
+    margin-top:10px;
+    background: yellow;
+}
+#clashPlayer{
+    margin-top:40px;
+    position: relative;
+    margin-left:-20px;
+    margin-top:10px;
+    background: blue;
+}
+#display{
+font-size:25px;
+float: right;
+color:red;
+font-weight: bold;
+background: yellow;
+}
+#snakeImg{
+    width:70%;
+    height:200px;
+}

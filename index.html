@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+       <title>Play Snake & Ladders</title>
+       <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+       <img id="snakeImg" src="http://www.theappguruz.com/public/assets/snakes_ladder/images/snakes_ladders.png">
+       <div id="enterInfo"><span id="enterPlayer1">Enter Player Name 1:</span>
+              <input type="text" id="playerName1">
+              <span id="enterPlayer2">Enter Player Name 2:</span>
+              <input type="text" id="playerName2">
+              <button id="playButton" onclick="playGame()">Play</button>
+       </div>
+
+       <div id="mainContainer" class="mainContainer">
+              <div id="showPlayerName"></div>
+              <div id="display"></div>
+              <div id="firstRow">
+                     <div class="redBg" id="100">100<div><img style="width: 30px; height:20px; margin-top:-40px" src="https://static.thenounproject.com/png/2070101-200.png"></div>
+                     </div>
+                     <div class="whiteBg" id="99">99</div>
+                     <div class="redBg" id="98">98</div>
+                     <div class="whiteBg" id="97">97</div>
+                     <div class="redBg" id="96">96</div>
+                     <div class="whiteBg" id="95">95</div>
+                     <div class="redBg" id="94">94</div>
+                     <div class="whiteBg" id="93">93</div>
+                     <div class="redBg" id="92">92</div>
+                     <div class="whiteBg" id="91">91</div>
+              </div>
+              <div id="secondRow">
+                     <div class="whiteBg" id="81">81</div>
+                     <div class="redBg" id="82">82</div>
+                     <div class="whiteBg" id="83">83</div>
+                     <div class="redBg" id="84">84</div>
+                     <div class="whiteBg" id="85">85</div>
+                     <div class="redBg" id="86">86</div>
+                     <div class="whiteBg" id="87">87</div>
+                     <div class="redBg" id="88">88</div>
+                     <div class="whiteBg" id="89">89</div>
+                     <div class="redBg" id="90">90</div>
+              </div>
+              <div id="thirdRow">
+                     <div class="redBg" id="80">80</div>
+                     <div class="whiteBg" id="79">79</div>
+                     <div class="redBg" id="78">78</div>
+                     <div class="whiteBg" id="77">77</div>
+                     <div class="redBg" id="76">76</div>
+                     <div class="whiteBg" id="75">75</div>
+                     <div class="redBg" id="74">74</div>
+                     <div class="whiteBg" id="73">73</div>
+                     <div class="redBg" id="72">72</div>
+                     <div class="whiteBg" id="71">71</div>
+              </div>
+              <div id="fourthRow">
+                     <div class="whiteBg" id="61">61</div>
+                     <div class="redBg" id="62">62</div>
+                     <div class="whiteBg" id="63">63</div>
+                     <div class="redBg" id="64">64</div>
+                     <div class="whiteBg" id="65">65</div>
+                     <div class="redBg" id="66">66</div>
+                     <div class="whiteBg" id="67">67</div>
+                     <div class="redBg" id="68">68</div>
+                     <div class="whiteBg" id="69">69</div>
+                     <div class="redBg" id="70">70</div>
+              </div>
+              <div id="fifthRow">
+                     <div class="redBg" id="60">60</div>
+                     <div class="whiteBg" id="59">59</div>
+                     <div class="redBg" id="58">58</div>
+                     <div class="whiteBg" id="57">57</div>
+                     <div class="redBg" id="56">56</div>
+                     <div class="whiteBg" id="55">55</div>
+                     <div class="redBg" id="54">54</div>
+                     <div class="whiteBg" id="53">53</div>
+                     <div class="redBg" id="52">52</div>
+                     <div class="whiteBg" id="51">51</div>
+              </div>
+              <div id="sixthRow">
+                     <div class="whiteBg" id="41">41</div>
+                     <div class="redBg" id="42">42</div>
+                     <div class="whiteBg" id="43">43</div>
+                     <div class="redBg" id="44">44</div>
+                     <div class="whiteBg" id="45">45</div>
+                     <div class="redBg" id="46">46</div>
+                     <div class="whiteBg" id="47">47</div>
+                     <div class="redBg" id="48">48</div>
+                     <div class="whiteBg" id="49">49</div>
+                     <div class="redBg" id="50">50</div>
+              </div>
+              <div id="seventhRow">
+                     <div class="redBg" id="40">40</div>
+                     <div class="whiteBg" id="39">39</div>
+                     <div class="redBg" id="38">38</div>
+                     <div class="whiteBg" id="37">37</div>
+                     <div class="redBg" id="36">36</div>
+                     <div class="whiteBg" id="35">35</div>
+                     <div class="redBg" id="34">34</div>
+                     <div class="whiteBg" id="33">33</div>
+                     <div class="redBg" id="32">32</div>
+                     <div class="whiteBg" id="31">31</div>
+              </div>
+              <div id="eightRow">
+                     <div class="whiteBg" id="21">21</div>
+                     <div class="redBg" id="22">22</div>
+                     <div class="whiteBg" id="23">23</div>
+                     <div class="redBg" id="24">24</div>
+                     <div class="whiteBg" id="25">25</div>
+                     <div class="redBg" id="26">26</div>
+                     <div class="whiteBg" id="27">27</div>
+                     <div class="redBg" id="28">28</div>
+                     <div class="whiteBg" id="29">29</div>
+                     <div class="redBg" id="30">30</div>
+              </div>
+              <div id="ninthRow">
+                     <div class="redBg" id="20">20</div>
+                     <div class="whiteBg" id="19">19</div>
+                     <div class="redBg" id="18">18</div>
+                     <div class="whiteBg" id="17">17</div>
+                     <div class="redBg" id="16">16</div>
+                     <div class="whiteBg" id="15">15</div>
+                     <div class="redBg" id="14">14</div>
+                     <div class="whiteBg" id="13">13</div>
+                     <div class="redBg" id="12">12</div>
+                     <div class="whiteBg" id="11">11</div>
+              </div>
+              <div id="tenthRow">
+                     <div class="whiteBg" id="1">1<div id="startPoint">Start</div>
+                     </div>
+                     <div class="redBg" id="2">2</div>
+                     <div class="whiteBg" id="3">3</div>
+                     <div class="redBg" id="4">4</div>
+                     <div class="whiteBg" id="5">5</div>
+                     <div class="redBg" id="6">6</div>
+                     <div class="whiteBg" id="7">7</div>
+                     <div class="redBg" id="8">8</div>
+                     <div class="whiteBg" id="9">9</div>
+                     <div class="redBg" id="10">10</div>
+              </div>
+              <img id="snake1" src="https://static.thenounproject.com/png/1998434-200.png">
+              <img id="snake2" src="https://static.thenounproject.com/png/1998434-200.png">
+              <img id="snake3" src="https://static.thenounproject.com/png/2166272-200.png">
+              <img id="snake4" src="https://static.thenounproject.com/png/2619530-200.png">
+              <img id="snake5" src="https://static.thenounproject.com/png/2619530-200.png">
+              <img id="snake6" src="https://static.thenounproject.com/png/515136-200.png">
+              <img id="snake7" src="https://static.thenounproject.com/png/2166272-200.png">
+              <img id="ladder1" src="https://static.thenounproject.com/png/144777-200.png">
+              <img id="ladder2" src="https://static.thenounproject.com/png/1863386-200.png">
+              <img id="ladder3" src="https://static.thenounproject.com/png/1272376-200.png">
+              <img id="ladder4" src="https://static.thenounproject.com/png/1863386-200.png">
+              <img id="ladder5" src="https://static.thenounproject.com/png/886667-200.png">
+              <img id="ladder6" src="https://static.thenounproject.com/png/1863386-200.png">
+       </div>
+       <div id="diceRolled" style="display: none">
+              <div id="showPlayer1"></div>
+              <div id="diceOne"></div>
+              <div id="showPlayer2"></div>
+              <div id="diceTwo"></div>
+              <br><br><br>
+              <button id="rollOne" onclick="player1Dice()"><div id="player1">Player I</div></button>
+              <button id="rollTwo" onclick="player2Dice()"><div id="player2">Player II</div> </button>
+       </div>
+       <script src="script.js"></script>
+</body>
+
+</html>
